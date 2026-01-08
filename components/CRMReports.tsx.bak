@@ -1,0 +1,171 @@
+'use client';
+
+import { useState, useMemo } from 'react';
+import { CRMEntry } from '@/lib/types';
+import { MOCK_BUSINESSES } from '@/lib/mockData';
+
+interface CRMReportsProps {
+    leads: CRMEntry[];
+}
+
+export default function CRMReports({ leads }: CRMReportsProps) {
+    // Default to last 30 days
+    const [startDate, setStartDate] = useState(() => {
+        const d = new Date();
+        d.setDate(d.getDate() - 30);
+        return d.toISOString().split('T')[0];
+    });
+    const [endDate, setEndDate] = useState(() => new Date().toISOString().split('T')[0]);
+
+    const stats = useMemo(() => {
+        const start = new Date(startDate);
+        const end = new Date(endDate);
+        // Set end date to end of day
+        end.setHours(23, 59, 59, 999);
+
+        // Filter leads
+        const filtered = leads.filter(lead => {
+            const date = new Date(lead.contactDate);
+            return date >= start && date <= end;
+        });
+
+        // Group by category
+        const counts: Record<string, number> = {};
+        filtered.forEach(lead => {
+            let cat = lead.category;
+
+            // 1. Backfill missing category from mock data if needed (for old mock data)
+            if (!cat || cat === 'Establishment' || cat === 'Outros') {
+                const business = MOCK_BUSINESSES.find(b => b.id === lead.id);
+                if (business) {
+                    cat = business.category;
+                }
+            }
+
+            // 2. Infer from Name (Robust fallback for real data searched before we had 'types')
+            if (!cat || cat === 'Establishment' || cat === 'Outros') {
+                const inferred = inferCategoryFromData(lead.businessName);
+                if (inferred) {
+                    cat = inferred;
+                }
+            }
+
+            // 3. Final Fallback
+            cat = cat || 'Outros';
+            counts[cat] = (counts[cat] || 0) + 1;
+        });
+
+        // Convert to array and sort
+        return Object.entries(counts)
+            .map(([category, count]) => ({ category, count }))
+            .sort((a, b) => b.count - a.count);
+
+    }, [leads, startDate, endDate]);
+
+    const maxCount = Math.max(...stats.map(s => s.count), 1);
+
+    return (
+        <div className="space-y-8 animate-in fade-in duration-500">
+            <div className="bg-card border rounded-xl p-6 shadow-sm">
+                <div className="flex flex-wrap gap-4 items-end mb-8">
+                    <div>
+                        <label className="block text-sm font-medium mb-1 text-muted-foreground">Data Início</label>
+                        <input
+                            type="date"
+                            value={startDate}
+                            onChange={(e) => setStartDate(e.target.value)}
+                            className="bg-background border rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-primary/20 outline-none"
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-sm font-medium mb-1 text-muted-foreground">Data Fim</label>
+                        <input
+                            type="date"
+                            value={endDate}
+                            onChange={(e) => setEndDate(e.target.value)}
+                            className="bg-background border rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-primary/20 outline-none"
+                        />
+                    </div>
+                </div>
+
+                {stats.length === 0 ? (
+                    <div className="text-center py-20 text-muted-foreground">
+                        <p>Nenhum dado encontrado para o período selecionado.</p>
+                    </div>
+                ) : (
+                    <div className="space-y-4">
+                        <h3 className="font-semibold text-lg mb-6">Leads por Categoria</h3>
+
+                        {/* Custom Bar Chart */}
+                        <div className="flex items-end gap-4 h-64 min-h-[250px] border-b pb-2 overflow-x-auto min-w-full pt-12">
+                            {stats.map((item) => {
+                                const heightPercentage = (item.count / maxCount) * 100;
+                                return (
+                                    <div key={item.category} className="flex flex-col items-center flex-1 min-w-[80px] max-w-[120px] group">
+                                        <div className="relative w-full flex items-end justify-center h-full">
+                                            <div
+                                                className="w-full max-w-[60px] bg-blue-600 dark:bg-blue-500 rounded-t-sm relative transition-all duration-500 hover:opacity-90"
+                                                style={{ height: `${heightPercentage}%` }}
+                                            >
+                                                <span className="absolute -top-8 left-1/2 -translate-x-1/2 text-sm font-bold bg-background px-2 py-1 rounded shadow-md border z-10 whitespace-nowrap">
+                                                    {item.count}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="mt-3 text-xs text-center font-medium text-muted-foreground truncate w-full px-1" title={item.category}>
+                                            {item.category}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                )}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-card border rounded-xl p-6 shadow-sm">
+                    <div className="text-sm text-muted-foreground">Total Contactados</div>
+                    <div className="text-3xl font-bold mt-2">{stats.reduce((acc, curr) => acc + curr.count, 0)}</div>
+                </div>
+                <div className="bg-card border rounded-xl p-6 shadow-sm">
+                    <div className="text-sm text-muted-foreground">Categorias Ativas</div>
+                    <div className="text-3xl font-bold mt-2">{stats.length}</div>
+                </div>
+                <div className="bg-card border rounded-xl p-6 shadow-sm">
+                    <div className="text-sm text-muted-foreground">Top Categoria</div>
+                    <div className="text-3xl font-bold mt-2 truncate text-primary">
+                        {stats[0]?.category || '-'}
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// Robust fallback to infer category from business name for existing data
+function inferCategoryFromData(name: string): string | null {
+    if (!name) return null;
+    const n = name.toLowerCase();
+
+    // Beauty & Wellness
+    if (n.includes('barber') || n.includes('barbearia') || n.includes('cabelo') || n.includes('hair') || n.includes('cabeleireiro')) return 'Barbearias & Cabeleireiros';
+    if (n.includes('medic') || n.includes('médic') || n.includes('doctor')) return 'Médicos';
+    if (n.includes('clinic') || n.includes('clínica') || n.includes('dent') || n.includes('odont') || n.includes('saude') || n.includes('saúde')) return 'Clínicas & Saúde';
+    if (n.includes('estetica') || n.includes('estética') || n.includes('fisio') || n.includes('spa') || n.includes('therap')) return 'Estética & Bem-estar';
+    if (n.includes('gym') || n.includes('ginasio') || n.includes('ginásio') || n.includes('fitness') || n.includes('crossfit')) return 'Ginásios & Fitness';
+
+    // Food & Beverage
+    if (n.includes('restaurant') || n.includes('sushi') || n.includes('bistr') || n.includes('tasca') || n.includes('cervejaria') || n.includes('marisqueira') || n.includes('churrasqu') || n.includes('grill') || n.includes('steak') || n.includes('tapas')) return 'Restaurantes';
+    if (n.includes('cafe') || n.includes('café') || n.includes('pastelaria') || n.includes('padaria') || n.includes('bakery') || n.includes('coffee') || n.includes('confeitaria')) return 'Cafés & Pastelarias';
+    if (n.includes('burger') || n.includes('pizza') || n.includes('snack') || n.includes('fast') || n.includes('takeaway')) return 'Restaurantes Quick Service';
+    if (n.includes('bar') || n.includes('pub') || n.includes('wine')) return 'Bares & Nightlife';
+
+    // Services
+    if (n.includes('imobiliar') || n.includes('imobiliár') || n.includes('real estate') || n.includes('remax') || n.includes('era ') || n.includes('century')) return 'Imobiliárias';
+    if (n.includes('oficina') || n.includes('auto') || n.includes('moto') || n.includes('car repair') || n.includes('stand')) return 'Oficinas & Automóvel';
+    if (n.includes('advogad') || n.includes('law') || n.includes('juridic')) return 'Serviços Jurídicos';
+    if (n.includes('contabil') || n.includes('account')) return 'Contabilidade';
+
+    return null;
+}

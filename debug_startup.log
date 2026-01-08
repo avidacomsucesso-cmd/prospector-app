@@ -1,0 +1,13 @@
+
+> prospector-app@0.1.0 dev
+> next dev
+
+   ▲ Next.js 16.0.8 (Turbopack)
+   - Local:         http://localhost:3000
+   - Network:       http://169.254.123.104:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+Deseja finalizar o arquivo em lotes (S/N)? [?25h
+
+^C

@@ -1,0 +1,66 @@
+﻿
+> prospector-app@0.1.0 lint
+> eslint
+
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\app\crm\page.tsx
+   6:35  warning  'ExternalLink' is defined but never used                                                        @typescript-eslint/no-unused-vars
+  14:9   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\app\page.tsx
+  20:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\components\AnalysisModal.tsx
+  24:9  error  'displayList' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\components\MarketDemandCard.tsx
+  13:45  warning  'location' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\components\OutreachModal.tsx
+    5:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  197:24  error    Error: This value cannot be modified
+
+Modifying component props or hook arguments is not allowed. Consider using a local variable instead.
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\components\OutreachModal.tsx:197:24
+  195 |         if (!business.email) {
+  196 |             const email = prompt('Email do destinat├írio:');
+> 197 |             if (email) business.email = email;
+      |                        ^^^^^^^^ `business` cannot be modified
+  198 |         }
+  199 |
+  200 |         const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${business.email || ''}&su=${encodeURIComponent(emailSubject)}`;  react-hooks/immutability
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\components\ResultsTable.tsx
+  22:9   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+  55:51  error    Unexpected any. Specify a different type                                                        @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\components\SettingsModal.tsx
+  19:9  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\lib\api\places.ts
+  202:13  error    Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+  203:19  warning  '_unusedRank' is assigned a value but never used                                                                     @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\lib\google-ads-client.ts
+  64:57  warning  'locationId' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\scripts\fix_env.js
+  2:0  error  Parsing error: '}' expected
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\scripts\get_refresh_token.js
+  1:67   warning  'OAuth2Client' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  1:122  warning  'readline' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  1:160  warning  'fs' is assigned a value but never used            @typescript-eslint/no-unused-vars
+  1:186  warning  'path' is assigned a value but never used          @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\scripts\restore_full_env.js
+  1:65   warning  'fs' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  1:122  warning  'envPath' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\CATBACK-ANTIGRAVITY\prospector-app\scripts\update_token.js
+  2:0  error  Parsing error: '}' expected
+
+Ô£û 21 problems (7 errors, 14 warnings)
+  1 error and 3 warnings potentially fixable with the `--fix` option.
+

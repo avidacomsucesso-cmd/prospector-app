@@ -1,0 +1,260 @@
+[2025-12-23T12:57:59.008Z] --- Request Received at /api/keywords ---
+[2025-12-23T12:57:59.009Z] Term: Cafe, LocationId: undefined
+[2025-12-23T12:57:59.010Z] Credentials present. Fetching volume...
+[2025-12-23T12:57:59.413Z] Error: metrics is null
+[2025-12-23T13:05:49.746Z] --- Request Received at /api/keywords ---
+[2025-12-23T13:05:49.748Z] Term: Clínicas Estéticas Amadora, LocationId: undefined
+[2025-12-23T13:05:49.749Z] Credentials present. Fetching volume...
+[Client] [2025-12-23T13:05:49.750Z] Fetching volume for: Clínicas Estéticas Amadora
+[Client] [2025-12-23T13:05:50.026Z] Access Token Error: invalid_grant
+[Client] [2025-12-23T13:05:50.029Z] Client Catch: invalid_grant
+[2025-12-23T13:05:50.408Z] Error: metrics is null
+[2025-12-23T13:06:17.341Z] --- Request Received at /api/keywords ---
+[2025-12-23T13:06:17.344Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2025-12-23T13:06:17.345Z] Credentials present. Fetching volume...
+[Client] [2025-12-23T13:06:17.347Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2025-12-23T13:06:17.532Z] Access Token Error: invalid_grant
+[Client] [2025-12-23T13:06:17.533Z] Client Catch: invalid_grant
+[2025-12-23T13:06:17.559Z] Error: metrics is null
+[2025-12-23T13:14:28.307Z] --- Request Received at /api/keywords ---
+[2025-12-23T13:14:28.315Z] Term: Centros de Estética Benfica, LocationId: undefined
+[2025-12-23T13:14:28.318Z] Credentials present. Fetching volume...
+[Client] [2025-12-23T13:14:28.321Z] Fetching volume for: Centros de Estética Benfica
+[Client] [2025-12-23T13:14:28.642Z] Access Token Error: unauthorized_client
+[Client] [2025-12-23T13:14:28.643Z] Client Catch: unauthorized_client
+[2025-12-23T13:14:28.895Z] Error: metrics is null
+[2025-12-23T13:29:05.332Z] --- Request Received at /api/keywords ---
+[2025-12-23T13:29:05.333Z] Term: Clínicas Dentárias Amadora, LocationId: undefined
+[2025-12-23T13:29:05.334Z] Credentials present. Fetching volume...
+[Client] [2025-12-23T13:29:05.335Z] Fetching volume for: Clínicas Dentárias Amadora
+[Client] [2025-12-23T13:29:05.568Z] Access Token Error: unauthorized_client
+[Client] [2025-12-23T13:29:05.568Z] Client Catch: unauthorized_client
+[2025-12-23T13:29:05.724Z] Error: metrics is null
+[2025-12-23T13:54:12.142Z] --- Request Received at /api/keywords ---
+[2025-12-23T13:54:12.144Z] Term: Cabeleireiros Cascais, LocationId: undefined
+[2025-12-23T13:54:12.145Z] Credentials present. Fetching volume...
+[Client] [2025-12-23T13:54:12.146Z] Fetching volume for: Cabeleireiros Cascais
+[Client] [2025-12-23T13:54:12.419Z] Access Token acquired.
+[Client] [2025-12-23T13:54:12.747Z] API Error Response: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/v17/customers/7171009209:generateKeywordHistoricalMetrics</code> was not found on this server.  <ins>That’s all we know.</ins>
+
+[Client] [2025-12-23T13:54:12.751Z] Client Catch: Google Ads API Request Failed: 404 Not Found
+[2025-12-23T13:54:12.874Z] Error: metrics is null
+[2025-12-23T13:55:28.515Z] --- Request Received at /api/keywords ---
+[2025-12-23T13:55:28.515Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2025-12-23T13:55:28.516Z] Credentials present. Fetching volume...
+[Client] [2025-12-23T13:55:28.516Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2025-12-23T13:55:28.676Z] Access Token acquired.
+[Client] [2025-12-23T13:55:28.774Z] API Error Response: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/v17/customers/7171009209:generateKeywordHistoricalMetrics</code> was not found on this server.  <ins>That’s all we know.</ins>
+
+[Client] [2025-12-23T13:55:28.780Z] Client Catch: Google Ads API Request Failed: 404 Not Found
+[2025-12-23T13:55:28.825Z] Error: metrics is null
+[2025-12-23T13:57:46.530Z] --- Request Received at /api/keywords ---
+[2025-12-23T13:57:46.531Z] Term: Cabeleireiros Cascais, LocationId: undefined
+[2025-12-23T13:57:46.532Z] Credentials present. Fetching volume...
+[Client] [2025-12-23T13:57:46.532Z] Fetching volume for: Cabeleireiros Cascais
+[Client] [2025-12-23T13:57:46.729Z] Access Token acquired.
+[Client] [2025-12-23T13:57:47.099Z] API Error Response: {
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.ads.googleads.v19.errors.GoogleAdsFailure",
+        "errors": [
+          {
+            "errorCode": {
+              "authorizationError": "DEVELOPER_TOKEN_NOT_APPROVED"
+            },
+            "message": "The developer token is only approved for use with test accounts. To access non-test accounts, apply for Basic or Standard access."
+          }
+        ],
+        "requestId": "zLSZDuE9Yv7UcO5pvQOpMA"
+      }
+    ]
+  }
+}
+
+[Client] [2025-12-23T13:57:47.105Z] Client Catch: Google Ads API Request Failed: 403 Forbidden
+[2025-12-23T13:57:47.261Z] Error: metrics is null
+[2025-12-23T14:01:38.105Z] --- Request Received at /api/keywords ---
+[2025-12-23T14:01:38.107Z] Term: Clínicas Médicas Benfica, LocationId: undefined
+[2025-12-23T14:01:38.108Z] Credentials present. Fetching volume...
+[Client] [2025-12-23T14:01:38.109Z] Fetching volume for: Clínicas Médicas Benfica
+[Client] [2025-12-23T14:01:38.324Z] Access Token acquired.
+[Client] [2025-12-23T14:01:38.638Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2025-12-23T14:01:38.638Z] Success! Returning metrics.
+[2025-12-23T14:01:56.567Z] --- Request Received at /api/keywords ---
+[2025-12-23T14:01:56.568Z] Term: Clínicas Médicas Cascais, LocationId: undefined
+[2025-12-23T14:01:56.569Z] Credentials present. Fetching volume...
+[Client] [2025-12-23T14:01:56.570Z] Fetching volume for: Clínicas Médicas Cascais
+[Client] [2025-12-23T14:01:56.738Z] Access Token acquired.
+[Client] [2025-12-23T14:01:56.985Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2025-12-23T14:01:56.987Z] Success! Returning metrics.
+[2025-12-27T11:45:14.262Z] --- Request Received at /api/keywords ---
+[2025-12-27T11:45:14.263Z] Term: Cabeleireiros Oeiras, LocationId: undefined
+[2025-12-27T11:45:14.264Z] Credentials present. Fetching volume...
+[Client] [2025-12-27T11:45:14.265Z] Fetching volume for: Cabeleireiros Oeiras
+[Client] [2025-12-27T11:45:14.442Z] Access Token acquired.
+[Client] [2025-12-27T11:45:14.862Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2025-12-27T11:45:14.863Z] Success! Returning metrics.
+[2026-01-01T15:45:45.119Z] --- Request Received at /api/keywords ---
+[2026-01-01T15:45:45.120Z] Term: Eletricistas Cascais, LocationId: undefined
+[2026-01-01T15:45:45.121Z] Credentials present. Fetching volume...
+[Client] [2026-01-01T15:45:45.121Z] Fetching volume for: Eletricistas Cascais
+[Client] [2026-01-01T15:45:45.477Z] Access Token acquired.
+[Client] [2026-01-01T15:45:45.795Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-01T15:45:45.796Z] Success! Returning metrics.
+[2026-01-02T19:57:21.411Z] --- Request Received at /api/keywords ---
+[2026-01-02T19:57:21.412Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-02T19:57:21.414Z] Credentials present. Fetching volume...
+[Client] [2026-01-02T19:57:21.415Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-02T19:57:21.651Z] Access Token acquired.
+[Client] [2026-01-02T19:57:22.005Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-02T19:57:22.006Z] Success! Returning metrics.
+[2026-01-04T23:18:32.336Z] --- Request Received at /api/keywords ---
+[2026-01-04T23:18:32.338Z] Term: Clínicas Médicas Estoril, LocationId: undefined
+[2026-01-04T23:18:32.338Z] Credentials present. Fetching volume...
+[Client] [2026-01-04T23:18:32.339Z] Fetching volume for: Clínicas Médicas Estoril
+[Client] [2026-01-04T23:18:32.584Z] Access Token acquired.
+[Client] [2026-01-04T23:18:32.889Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-04T23:18:32.890Z] Success! Returning metrics.
+[2026-01-04T23:21:01.329Z] --- Request Received at /api/keywords ---
+[2026-01-04T23:21:01.339Z] Term: Clínicas Médicas Cascais, LocationId: undefined
+[2026-01-04T23:21:01.339Z] Credentials present. Fetching volume...
+[Client] [2026-01-04T23:21:01.339Z] Fetching volume for: Clínicas Médicas Cascais
+[Client] [2026-01-04T23:21:01.655Z] Access Token acquired.
+[Client] [2026-01-04T23:21:01.977Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-04T23:21:01.978Z] Success! Returning metrics.
+[2026-01-05T12:33:20.634Z] --- Request Received at /api/keywords ---
+[2026-01-05T12:33:20.636Z] Term: Clínicas Estéticas Amadora, LocationId: undefined
+[2026-01-05T12:33:20.637Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T12:33:20.637Z] Fetching volume for: Clínicas Estéticas Amadora
+[Client] [2026-01-05T12:33:20.918Z] Access Token acquired.
+[Client] [2026-01-05T12:33:21.296Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T12:33:21.297Z] Success! Returning metrics.
+[2026-01-05T12:37:34.718Z] --- Request Received at /api/keywords ---
+[2026-01-05T12:37:34.719Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-05T12:37:34.719Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T12:37:34.720Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-05T12:37:34.950Z] Access Token acquired.
+[Client] [2026-01-05T12:37:35.216Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T12:37:35.217Z] Success! Returning metrics.
+[2026-01-05T12:39:53.205Z] --- Request Received at /api/keywords ---
+[2026-01-05T12:39:53.205Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-05T12:39:53.206Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T12:39:53.206Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-05T12:39:53.385Z] Access Token acquired.
+[Client] [2026-01-05T12:39:53.830Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T12:39:53.831Z] Success! Returning metrics.
+[2026-01-05T12:40:11.635Z] --- Request Received at /api/keywords ---
+[2026-01-05T12:40:11.636Z] Term: Advogados Avenidas Novas (Saldanha, Picoas, Av. da República), LocationId: undefined
+[2026-01-05T12:40:11.637Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T12:40:11.637Z] Fetching volume for: Advogados Avenidas Novas (Saldanha, Picoas, Av. da República)
+[Client] [2026-01-05T12:40:11.800Z] Access Token acquired.
+[Client] [2026-01-05T12:40:12.052Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T12:40:12.053Z] Success! Returning metrics.
+[2026-01-05T12:42:06.351Z] --- Request Received at /api/keywords ---
+[2026-01-05T12:42:06.352Z] Term: Empresas de Limpeza Cascais, LocationId: undefined
+[2026-01-05T12:42:06.352Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T12:42:06.352Z] Fetching volume for: Empresas de Limpeza Cascais
+[Client] [2026-01-05T12:42:06.545Z] Access Token acquired.
+[Client] [2026-01-05T12:42:06.934Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T12:42:06.935Z] Success! Returning metrics.
+[2026-01-05T12:42:35.220Z] --- Request Received at /api/keywords ---
+[2026-01-05T12:42:35.221Z] Term: house shine, LocationId: undefined
+[2026-01-05T12:42:35.221Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T12:42:35.222Z] Fetching volume for: house shine
+[Client] [2026-01-05T12:42:35.391Z] Access Token acquired.
+[Client] [2026-01-05T12:42:35.667Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T12:42:35.669Z] Success! Returning metrics.
+[2026-01-05T23:10:33.522Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:10:33.523Z] Term: Clínicas Estéticas Cascais, LocationId: undefined
+[2026-01-05T23:10:33.523Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:10:33.524Z] Fetching volume for: Clínicas Estéticas Cascais
+[Client] [2026-01-05T23:10:33.747Z] Access Token acquired.
+[Client] [2026-01-05T23:10:34.047Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:10:34.048Z] Success! Returning metrics.
+[2026-01-05T23:12:17.462Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:12:17.463Z] Term: s clinic, LocationId: undefined
+[2026-01-05T23:12:17.464Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:12:17.464Z] Fetching volume for: s clinic
+[Client] [2026-01-05T23:12:17.625Z] Access Token acquired.
+[Client] [2026-01-05T23:12:17.891Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:12:17.892Z] Success! Returning metrics.
+[2026-01-05T23:20:00.075Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:20:00.076Z] Term: s clinic, LocationId: undefined
+[2026-01-05T23:20:00.077Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:20:00.077Z] Fetching volume for: s clinic
+[Client] [2026-01-05T23:20:00.245Z] Access Token acquired.
+[Client] [2026-01-05T23:20:00.550Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:20:00.551Z] Success! Returning metrics.
+[2026-01-05T23:20:51.020Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:20:51.021Z] Term: s clinic, LocationId: undefined
+[2026-01-05T23:20:51.021Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:20:51.022Z] Fetching volume for: s clinic
+[Client] [2026-01-05T23:20:51.185Z] Access Token acquired.
+[Client] [2026-01-05T23:20:51.479Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:20:51.479Z] Success! Returning metrics.
+[2026-01-05T23:25:01.295Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:25:01.296Z] Term: s clinic amadora, LocationId: undefined
+[2026-01-05T23:25:01.296Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:25:01.297Z] Fetching volume for: s clinic amadora
+[Client] [2026-01-05T23:25:01.466Z] Access Token acquired.
+[Client] [2026-01-05T23:25:01.761Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:25:01.762Z] Success! Returning metrics.
+[2026-01-05T23:29:41.172Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:29:41.175Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-05T23:29:41.177Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:29:41.180Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-05T23:29:41.789Z] Access Token acquired.
+[Client] [2026-01-05T23:29:42.101Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:29:42.102Z] Success! Returning metrics.
+[2026-01-05T23:30:52.519Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:30:52.521Z] Term: S Clinic Amadora, LocationId: undefined
+[2026-01-05T23:30:52.522Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:30:52.525Z] Fetching volume for: S Clinic Amadora
+[Client] [2026-01-05T23:30:52.802Z] Access Token acquired.
+[Client] [2026-01-05T23:30:53.407Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:30:53.417Z] Success! Returning metrics.
+[2026-01-05T23:34:05.760Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:34:05.763Z] Term: S Clinic Amadora, LocationId: undefined
+[2026-01-05T23:34:05.764Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:34:05.764Z] Fetching volume for: S Clinic Amadora
+[Client] [2026-01-05T23:34:06.149Z] Access Token acquired.
+[Client] [2026-01-05T23:34:06.580Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:34:06.585Z] Success! Returning metrics.
+[2026-01-05T23:35:19.966Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:35:19.969Z] Term: S Clinic Amadora, LocationId: undefined
+[2026-01-05T23:35:19.974Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:35:19.979Z] Fetching volume for: S Clinic Amadora
+[Client] [2026-01-05T23:35:20.514Z] Access Token acquired.
+[Client] [2026-01-05T23:35:20.907Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:35:20.908Z] Success! Returning metrics.
+[2026-01-05T23:37:14.926Z] --- Request Received at /api/keywords ---
+[2026-01-05T23:37:14.929Z] Term: S Clinic Amadora, LocationId: undefined
+[2026-01-05T23:37:14.931Z] Credentials present. Fetching volume...
+[Client] [2026-01-05T23:37:14.933Z] Fetching volume for: S Clinic Amadora
+[Client] [2026-01-05T23:37:15.260Z] Access Token acquired.
+[Client] [2026-01-05T23:37:15.741Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-05T23:37:15.742Z] Success! Returning metrics.
