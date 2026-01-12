@@ -258,3 +258,80 @@
 [Client] [2026-01-05T23:37:15.260Z] Access Token acquired.
 [Client] [2026-01-05T23:37:15.741Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
 [2026-01-05T23:37:15.742Z] Success! Returning metrics.
+[2026-01-08T17:27:14.480Z] --- Request Received at /api/keywords ---
+[2026-01-08T17:27:14.481Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-08T17:27:14.481Z] Credentials present. Fetching volume...
+[Client] [2026-01-08T17:27:14.482Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-08T17:27:14.630Z] Access Token acquired.
+[Client] [2026-01-08T17:27:14.925Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-08T17:27:14.925Z] Success! Returning metrics.
+[2026-01-08T17:56:52.175Z] --- Request Received at /api/keywords ---
+[2026-01-08T17:56:52.175Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-08T17:56:52.176Z] Credentials present. Fetching volume...
+[Client] [2026-01-08T17:56:52.176Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-08T17:56:52.367Z] Access Token acquired.
+[Client] [2026-01-08T17:56:52.683Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-08T17:56:52.684Z] Success! Returning metrics.
+[2026-01-09T11:05:25.430Z] --- Request Received at /api/keywords ---
+[2026-01-09T11:05:25.458Z] Term: Clínicas Médicas Avenidas Novas (Saldanha, Picoas, Av. da República), LocationId: undefined
+[2026-01-09T11:05:25.459Z] Credentials present. Fetching volume...
+[Client] [2026-01-09T11:05:25.460Z] Fetching volume for: Clínicas Médicas Avenidas Novas (Saldanha, Picoas, Av. da República)
+[Client] [2026-01-09T11:05:25.734Z] Access Token acquired.
+[Client] [2026-01-09T11:05:26.143Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-09T11:05:26.144Z] Success! Returning metrics.
+[2026-01-10T00:21:34.638Z] --- Request Received at /api/keywords ---
+[2026-01-10T00:21:34.639Z] Term: bt nails , LocationId: undefined
+[2026-01-10T00:21:34.640Z] Credentials present. Fetching volume...
+[Client] [2026-01-10T00:21:34.641Z] Fetching volume for: bt nails 
+[Client] [2026-01-10T00:21:34.907Z] Access Token acquired.
+[Client] [2026-01-10T00:21:35.223Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-10T00:21:35.223Z] Success! Returning metrics.
+[2026-01-10T00:21:49.977Z] --- Request Received at /api/keywords ---
+[2026-01-10T00:21:49.978Z] Term: bt nails, LocationId: undefined
+[2026-01-10T00:21:49.979Z] Credentials present. Fetching volume...
+[Client] [2026-01-10T00:21:49.979Z] Fetching volume for: bt nails
+[Client] [2026-01-10T00:21:50.133Z] Access Token acquired.
+[Client] [2026-01-10T00:21:50.392Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-10T00:21:50.392Z] Success! Returning metrics.
+[2026-01-10T00:21:54.456Z] --- Request Received at /api/keywords ---
+[2026-01-10T00:21:54.457Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-10T00:21:54.458Z] Credentials present. Fetching volume...
+[Client] [2026-01-10T00:21:54.459Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-10T00:21:54.530Z] Access Token acquired.
+[Client] [2026-01-10T00:21:54.808Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-10T00:21:54.808Z] Success! Returning metrics.
+[2026-01-10T00:24:12.747Z] --- Request Received at /api/keywords ---
+[2026-01-10T00:24:12.748Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-10T00:24:12.748Z] Credentials present. Fetching volume...
+[Client] [2026-01-10T00:24:12.749Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-10T00:24:12.891Z] Access Token acquired.
+[Client] [2026-01-10T00:24:13.142Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-10T00:24:13.143Z] Success! Returning metrics.
+[2026-01-10T00:24:23.338Z] --- Request Received at /api/keywords ---
+[2026-01-10T00:24:23.339Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-10T00:24:23.340Z] Credentials present. Fetching volume...
+[Client] [2026-01-10T00:24:23.340Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-10T00:24:23.516Z] Access Token acquired.
+[Client] [2026-01-10T00:24:23.787Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-10T00:24:23.788Z] Success! Returning metrics.
+[2026-01-10T00:26:37.765Z] --- Request Received at /api/keywords ---
+[2026-01-10T00:26:37.767Z] Term: Advogados Campo de Ourique, LocationId: undefined
+[2026-01-10T00:26:37.768Z] Credentials present. Fetching volume...
+[Client] [2026-01-10T00:26:37.769Z] Fetching volume for: Advogados Campo de Ourique
+[Client] [2026-01-10T00:26:37.911Z] Access Token acquired.
+[Client] [2026-01-10T00:26:38.211Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-10T00:26:38.212Z] Success! Returning metrics.
+[2026-01-10T00:26:53.117Z] --- Request Received at /api/keywords ---
+[2026-01-10T00:26:53.117Z] Term: bt estetica, LocationId: undefined
+[2026-01-10T00:26:53.118Z] Credentials present. Fetching volume...
+[Client] [2026-01-10T00:26:53.118Z] Fetching volume for: bt estetica
+[Client] [2026-01-10T00:26:53.312Z] Access Token acquired.
+[Client] [2026-01-10T00:26:53.581Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-10T00:26:53.582Z] Success! Returning metrics.
+[2026-01-12T11:26:30.261Z] --- Request Received at /api/keywords ---
+[2026-01-12T11:26:30.264Z] Term: Clínicas Dentárias Benfica, LocationId: undefined
+[2026-01-12T11:26:30.265Z] Credentials present. Fetching volume...
+[Client] [2026-01-12T11:26:30.267Z] Fetching volume for: Clínicas Dentárias Benfica
+[Client] [2026-01-12T11:26:30.579Z] Access Token acquired.
+[Client] [2026-01-12T11:26:31.009Z] Error: DEVELOPER_TOKEN_NOT_APPROVED. Returning MOCK data to unblock UI.
+[2026-01-12T11:26:31.010Z] Success! Returning metrics.

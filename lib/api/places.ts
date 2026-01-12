@@ -45,7 +45,13 @@ export async function searchBusinesses(category: string, location: string, direc
                 const parts = targetPlace.formattedAddress.split(',');
                 if (parts.length >= 2) {
                     const cityPart = parts[parts.length - 2].trim();
-                    inferredLocation = cityPart.replace(/^\d{4}-\d{3}\s+/, '') || inferredLocation;
+                    const extractedLocation = cityPart.replace(/^\d{4}-\d{3}\s+/, '');
+
+                    // Only overwrite if current location is empty OR extracted location is more specific
+                    // For now, let's keep the user's location if it's already set and not "Unknown"
+                    if (!inferredLocation || inferredLocation === 'Unknown' || inferredLocation === '') {
+                        inferredLocation = extractedLocation || inferredLocation;
+                    }
                 }
             }
 
@@ -103,6 +109,7 @@ export async function searchBusinesses(category: string, location: string, direc
             // If still empty, default to "Establishment"
             if (!inferredCategory) inferredCategory = 'Establishment';
 
+
             log(`Inferred Category: ${inferredCategory}`);
             log(`Inferred Location: ${inferredLocation}`);
 
@@ -110,11 +117,11 @@ export async function searchBusinesses(category: string, location: string, direc
             const benchmarkQuery = `${inferredCategory} em ${inferredLocation}`;
             log(`Benchmark Query: ${benchmarkQuery}`);
 
-            // Fetch up to 3 pages (approx 60 results) to find true rank
+            // Fetch up to 5 pages (approx 100 results) to find true rank
             let totalFetched = 0;
             let nextPageToken: string | undefined = undefined;
             let realRankIndex = -1;
-            const MAX_PAGES = 3;
+            const MAX_PAGES = 5;
 
             for (let i = 0; i < MAX_PAGES; i++) {
                 let url = `/api/places?query=${encodeURIComponent(benchmarkQuery)}&key=${apiKey}`;
@@ -165,8 +172,8 @@ export async function searchBusinesses(category: string, location: string, direc
             // E. Handle Target Display
             if (realRankIndex === -1) {
                 // If not found in the fetched pages, it implies rank is > totalFetched
-                // We display "> 60" (for example) or just the number
-                targetPlace.inferredRank = totalFetched + 1;
+                // We use a high fallback to avoid the "21" trap if only 1 page was fetched
+                targetPlace.inferredRank = totalFetched > 20 ? totalFetched + 1 : 101;
                 results.unshift(targetPlace);
             } else {
                 // Found in the list.
@@ -174,7 +181,6 @@ export async function searchBusinesses(category: string, location: string, direc
                 // We want to bring it to top for UI visibility but keep its Rank property correct.
 
                 // Find it in the accumulated 'results' array (re-find to be safe as page boundaries might differ after filter)
-                // Actually 'realRankIndex' was based on the filtered page stream. Let's find index in the final 'results' array.
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 const indexInRefinedList = results.findIndex((p: any) => p.id === targetBusinessId);
 
